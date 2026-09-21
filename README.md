@@ -64,6 +64,26 @@ The dataset was checked for duplicate records.
 
 **Result**: 45 duplicate records were found.
 
+###➕ Calculated Columns Added
+Four new calculated columns were created during preparation:
+
+**Total Order Value**
+Formula: Quantity * Unit Price
+Purpose: Ensures consistency between Quantity, Unit Price, and Sales Amount.
+
+**Amount After Discount**
+Formula: Sales Amount - Discount
+Purpose: Shows actual revenue after discounts.
+
+**Charged Amount Percentage**
+Formula: Discount / Sales Amount (set to 0 if Sales Amount = 0)
+Purpose: Helps analyze discount patterns across orders.
+
+**Inventory Status**
+Formula: IF(Inventory Level > 0, "In Stock", "Out of Stock")
+
+Purpose: Flags whether a product is available or out of stock for quick reporting.
+
 ### Transaction Date
 
 The existing date values were already in the correct format, and the column data type was corrected to ensure it was properly recognized for analysis.
