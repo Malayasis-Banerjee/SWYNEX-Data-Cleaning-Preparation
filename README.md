@@ -68,19 +68,19 @@ The dataset was checked for duplicate records.
 
 Four new calculated columns were created during preparation:
 
-**Total Order Value**
+**Total Order Value-:>**
 Formula: Quantity * Unit Price
 Purpose: Ensures consistency between Quantity, Unit Price, and Sales Amount.
 
-**Amount After Discount**
+**Amount After Discount-:>**
 Formula: Sales Amount - Discount
 Purpose: Shows actual revenue after discounts.
 
-**Charged Amount Percentage**
+**Charged Amount Percentage-:>**
 Formula: Discount / Sales Amount (set to 0 if Sales Amount = 0)
 Purpose: Helps analyze discount patterns across orders.
 
-**Inventory Status**
+**Inventory Status-:>**
 Formula: IF(Inventory Level > 0, "In Stock", "Out of Stock")
 
 Purpose: Flags whether a product is available or out of stock for quick reporting.
