@@ -30,7 +30,7 @@ The following issues were identified during the initial inspection:
 - Missing values in numeric and categorical fields
 - Invalid or missing transaction dates
 - Duplicate records check
-- 
+- Fixing Typo
 
 ## 🧹 Data Cleaning Process
 
@@ -67,6 +67,20 @@ The dataset was checked for duplicate records.
 ### Transaction Date
 
 The existing date values were already in the correct format, and the column data type was corrected to ensure it was properly recognized for analysis.
+
+### Return Reason
+
+Blanks replaced with "No Reason Provided".
+If Return Flag = No → "Not Returned".
+If Return Flag = Yes but blank → "Unspecified".
+
+### Fixing Typos
+
+Standardized categorical values (e.g., "Male" vs "Mle", "Retail" vs "Retaill").
+
+Applied consistent casing (e.g., "Retail" instead of "retail").
+
+Corrected spelling errors in Product Category, Sales Channel, and Order Status fields.
 
 ## 🛠️ Tools Used
 
