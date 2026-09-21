@@ -64,7 +64,8 @@ The dataset was checked for duplicate records.
 
 **Result**: 45 duplicate records were found.
 
-###➕ Calculated Columns Added
+### ➕ Calculated Columns Added
+
 Four new calculated columns were created during preparation:
 
 **Total Order Value**
